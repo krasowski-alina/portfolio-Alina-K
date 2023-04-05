@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #001A3A;
+    font-family: 'Raleway', sans-serif;
+    }
+    /* Nav Bar */
+li {
+    list-style: none;
+    }
+    a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.562rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    }
+    .nav-bar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo {
+    color: #FB4F93;
+    font-size: 2rem;
+    margin-left: 0.9em;
+
+    }
+    .nav-menu {
+    display: flex;
+    gap: 60px;
+    }
+    .nav-link {
+    transition: 0.8s ease;
+    }
+    .nav-link:hover {
+    color: #3be2ea;
+    }
+    .hamburger {
+    display: none;
+    cursor: pointer;
+    }
+    .bar {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+    @media all and (max-width: 768px){
+        .hamburger {
+        display: block;
+        margin-right: 20px;
+        }
+        .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+        transform: translateY(11px);
+        rotate: 45deg;
+        }
+        .hamburger.active .bar:nth-child(3){
+        transform: translateY(-11px);
+        rotate: -45deg;
+        }
+        .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(48, 64, 101, .4);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        }
+        .nav-item {
+        margin: 16px 0;
+        }
+        .nav-menu.active {
+        left: 0;
+        }
+        .nav-link {
+        font-size: 18px;
+        }
+        .logo {
+        font-size: 1.4rem;
+        letter-spacing: -.9px;
+        }
+    }
