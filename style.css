@@ -118,7 +118,7 @@ z-index: -1;
     } 
     .logo-text {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.875rem;
     letter-spacing: 1px;
     text-shadow: 1px 1px 1px #64c1c8;
     font-weight: bolder;
@@ -163,11 +163,50 @@ z-index: -1;
     @media (min-width: 600px) {
         .text,
         .main-container-text{
-            font-size: 2.1875rem;
+            font-size: 2.4rem;
         }
         .logo-text {
-            font-size: 2.6rem;
-            text-shadow: 2px 2px 2px #64c1c8;
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 1.5px #64c1c8;
             letter-spacing: 2.5px;
         }
     } 
+    /* About Section */
+
+    .about-container {
+    max-width: 390px;
+    margin: 0 auto;
+    }
+    .heading {
+    display: flex;
+    justify-content: center;
+    }
+    h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    }
+    h2 {
+    color: #64c1c8;
+    font-size: 30px;
+    font-weight: bolder;
+    border-bottom: 2px solid #EF2F88;
+    }
+    .about-text {
+      text-align: center;
+      padding: 10px;
+    }
+    .bold-text {
+      color: #64c1c8;
+      font-weight: bolder;
+      
+    }
+    h3 {
+    color: #fff;
+    font-size: 35px;
+    text-shadow: #EF2F88 1.5px 1.5px 2px;
+    letter-spacing: 2px;
+    }
+    .icon-descriprion {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    }

@@ -1,4 +1,4 @@
-
+AOS.init();
 particlesJS("particles-js-one", {
   "particles": {
     "number": {
