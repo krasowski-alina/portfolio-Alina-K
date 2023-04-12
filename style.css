@@ -186,7 +186,7 @@
     h2 {
     position: relative;
     color: #FB4F93;
-    font-size: 1.875rem;
+    font-size: 1.875rem; 
     font-weight: bolder;
     text-shadow: #0f172a 1.5px 1.5px 2px;
     }
@@ -196,15 +196,15 @@
         height: 3.5rem;
         width: 3.5rem;
         bottom: -.4em;
-        left: -.4em;
+        left: -.4em; 
         z-index: -1;
         border-radius: 50%;
         background-color: #272e3f;
     }
     h2:hover::before {
-        width: 7rem;
-        border-radius: 8%;
-
+        width: 100%;
+        left: 0; 
+        border-radius: 5%;
     }
     .about-text {
     text-align: center;
@@ -259,6 +259,10 @@
         h2 {
             font-size: 2.4rem;
         }
+        h2::before{
+            height: 4.8rem;
+            width: 4.8rem;
+        }
         .icon-descriprion {
             font-size: 1.8rem;
         }
@@ -291,4 +295,17 @@
 .btn-slider:hover {
     color: #3be2ea;
     transition: 0.5s all ease-in;
+}
+@media (min-width: 600px){
+    #certificate {
+    min-width: 580px;
+    height: 450px;
+    }
+    .btn-container {
+        padding: 2em;
+        gap: 2rem;
+    }
+    .btn-slider {
+    font-size: 4rem;
+    }
 }
