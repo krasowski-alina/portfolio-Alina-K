@@ -168,7 +168,8 @@
     }
     } 
     /* About Section */
-    .about-container {
+    .about-container,
+    .slider {
     max-width: 390px;
     margin: 0 auto;
     }
@@ -250,9 +251,6 @@
             max-width: 1100px;
             margin: 0 auto;
         }
-        /* .about-container {
-            background-color: #EF2F88;
-        } */
         .bold-text,
         .subheading {
             font-size: 2rem;
@@ -270,5 +268,27 @@
         .about-icons {
             display: flex;
         }
-
         } 
+/* Slider */
+#certificate {
+    max-width: 350px;
+    height: 250px;
+    }
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-top: .8em;
+}
+.btn-slider {
+    border: none;
+    background: transparent;
+    color: #F9F9F9;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btn-slider:hover {
+    color: #3be2ea;
+    transition: 0.5s all ease-in;
+}
