@@ -1,3 +1,5 @@
+import { data } from "/data.js"
+console.log(data)
 // NAV BAR
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
