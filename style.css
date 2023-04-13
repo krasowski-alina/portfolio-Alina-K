@@ -309,3 +309,92 @@
     font-size: 4rem;
     }
 }
+/* Projects */
+
+.project-cards {
+    padding: 1em;
+}
+.one {
+    background: url("mokups/findRecipe.jpg") center/cover ;
+}
+.two {
+    background: url("mokups/findRecipe.jpg") center/cover;
+}
+.three {
+    background: url("mokups/findRecipe.jpg") center/cover;
+}
+.four {
+    background: url("mokups/findRecipe.jpg") center/cover;
+}
+.project-cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr/repeat(auto-fill, minmax(300px, 300px));
+    grid-auto-rows: 280px;
+}
+/* DYNAMIC STYLE */
+.placeholder {
+    position: relative;
+}
+.mouseover-heading {
+    font-weight: bolder;
+    text-shadow: #001a3a 2px 2px 1.5px;
+    font-size: 1.875rem;
+    top: 30px;
+    left: 60px;
+    }
+    .mouseover-text {
+    border-bottom: 2px solid #EF2F88;
+    bottom: 15px;
+    left: 60px;
+    }
+    .project-btn {
+    /* opacity: 0; */
+    background: linear-gradient(131deg, rgba(239,47,136,1) 47%, rgba(100,193,200,1) 100%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    border: #fff 1.5px solid;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 170px;
+    left: 60px
+    }
+.mouseover-heading, .mouseover-text {
+    /* opacity: 0; */
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    color: #EF2F88;
+    }
+    /* JS ADD WHEN MOUSEOVER */
+.new {
+    background-color: rgba(100, 193, 200, 0.8);
+    }
+    .new  .mouseover-heading {
+    opacity: 1;
+    font-size: 1.875rem;
+    transition: 0.5s all ease-in;
+    }
+    .new .mouseover-text {
+    opacity: 1;
+    transition: 0.5s all ease-in;
+    font-size: 1.25rem;
+    }
+    .new .project-btn {
+    opacity: 1;
+    transition: 0.5s all ease-in;
+    font-size: 1.125rem;
+    }
+
+@media (min-width: 600px) {
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        grid-auto-rows: 300px;
+        padding: 2em 3.125em;
+    }
+    #projects {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
