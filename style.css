@@ -349,7 +349,7 @@
     left: 60px;
     }
     .project-btn {
-    /* opacity: 0; */
+    opacity: 0;
     background: linear-gradient(131deg, rgba(239,47,136,1) 47%, rgba(100,193,200,1) 100%);
     color: #fff;
     border-radius: 10px;
@@ -361,7 +361,7 @@
     left: 60px
     }
 .mouseover-heading, .mouseover-text {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
     font-family: 'Raleway', sans-serif;
     color: #EF2F88;
