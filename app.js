@@ -37,8 +37,39 @@ btns.forEach(item => {
     }
   })
 })
-
+// skills section 
+function renderSkillIcon() {
+  const skills = [`<i class="fa-brands fa-js icon-style"></i>`,
+                `<i class="fa-brands fa-react icon-style"></i>`,
+                `<i class="fa-brands fa-html5 icon-style"></i>`,
+                `<i class="fa-brands fa-css3-alt icon-style"></i>`,
+                `<i class="fa-brands fa-bootstrap icon-style"></i>`,
+                `<p class="hidden">JavaScript</p>`,
+                `<p class="hidden">React</p>`,
+                `<p class="hidden">HTML5</p>`,
+                `<p class="hidden">CSS3</p>`,
+                `<p class="hidden">Bootstrap</p>`
+                ]
+  let skillHtml =``
+  for(let i=0; i< skills.length; i++){
+      skillHtml += skills[i]
+  }
+  document.getElementById('skills-container').innerHTML = skillHtml
+}
+renderSkillIcon()
 // Projects
+const items = document.querySelectorAll(".mouseover");
+items.forEach(item => {
+  item.addEventListener("mouseover", ()=> {
+    removeFocus()
+    item.classList.add("new")
+  })
+  function removeFocus(){
+    items.forEach(item => {
+      item.classList.remove("new")
+    })
+  }
+})
 // import { data } from "/data.js"
 // function renderProjects(cardsArr){
 //   const renderCards = cardsArr.map(card => {
