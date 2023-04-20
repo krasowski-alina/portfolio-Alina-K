@@ -70,16 +70,3 @@ items.forEach(item => {
     })
   }
 })
-// import { data } from "/data.js"
-// function renderProjects(cardsArr){
-//   const renderCards = cardsArr.map(card => {
-//     const {id, image, name, stack} = card
-//     return `<<div class="one placeholder">
-//               <h4 class="mouseover-heading">${name}</h4>
-//               <button class="project-btn">Open Project</button>
-//               <p class="mouseover-text">HTML /CSS /JS /GSAP /AOS</p>
-//           </div>`
-//   })
-//   document.querySelector('.project-cards').innerHTML = renderCards
-// }
-// renderProjects(data)
