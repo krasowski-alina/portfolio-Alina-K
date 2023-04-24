@@ -149,6 +149,7 @@
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    margin-bottom: .4em;
     }
     .btn-projects:hover {
     box-shadow: 2px 2px 2px #182747;
@@ -238,7 +239,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     }
     .about-icon {
     height: 15vw;
@@ -346,7 +346,9 @@
     }
 }
 /* Projects */
-
+#projects {
+    margin-bottom: 2em;
+}
 .project-placeholder {
     height: 300px;
     border-radius: 5px;
@@ -462,6 +464,29 @@
     height: 100%;
     margin-top: -16px;
     border-radius: 5px;
+}
+/* CONTACT ME */
+/* #contacts {
+
+} */
+.contact-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.inputField {
+    margin: .8em 0 .5em ;
+}
+.inputField, .textField {
+border: #64c1c8 2px solid;
+border-radius: 5px;
+font-size: 1.125rem;
+padding: .3em;
+}
+.contacts-btn {
+    padding: 1em;
+    margin-bottom: .8em;
 }
 /* FOOTER  */
 footer {
